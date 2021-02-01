@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\vrouwelijk_teken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mannelijk_teken.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

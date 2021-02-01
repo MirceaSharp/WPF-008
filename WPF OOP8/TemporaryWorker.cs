@@ -20,7 +20,8 @@ namespace WPF_OOP8
 
         public virtual decimal Income()
         {
-            return Salary
+            return Salary;
         }
+
     }
 }

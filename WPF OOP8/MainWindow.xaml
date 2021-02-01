@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <RadioButton Name="rdCommission" Content="Commission Worker" HorizontalAlignment="Left" Height="19" Margin="23,10,0,0" VerticalAlignment="Top" Width="135"/>
+        <RadioButton Name="rdTemporary" Content="Temporary Worker" HorizontalAlignment="Left" Height="19" Margin="163,10,0,0" VerticalAlignment="Top" Width="119"/>
+        <RadioButton Name="rdHourly" Content="Hourly Worker" HorizontalAlignment="Left" Height="19" Margin="287,10,0,0" VerticalAlignment="Top" Width="96"/>
+        <RadioButton Name="rdEmployee" Content="Employee" HorizontalAlignment="Left" Height="19" Margin="395,10,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Height="28" Margin="10,39,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Height="28" Margin="10,72,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.524,1.81"/>
+        <Label Content="Salary" HorizontalAlignment="Left" Height="28" Margin="10,100,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.524,1.81"/>
+        <Label Content="Number" HorizontalAlignment="Left" Height="28" Margin="10,133,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.524,1.81"/>
+        <Label Content="Commission" HorizontalAlignment="Left" Height="28" Margin="10,161,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.524,1.81"/>
+        <TextBox Name="txtFirstName" HorizontalAlignment="Left" Height="22" Margin="99,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <TextBox Name="txtLastName" HorizontalAlignment="Left" Height="22" Margin="99,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <TextBox Name="txtSalary" HorizontalAlignment="Left" Height="22" Margin="99,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <TextBox Name="txtNumber" HorizontalAlignment="Left" Height="22" Margin="99,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <TextBox Name="txtCommission" HorizontalAlignment="Left" Height="22" Margin="99,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
+        <Button Name="btnAdd" Content="Add" HorizontalAlignment="Left" Height="24" Margin="241,43,0,0" VerticalAlignment="Top" Width="108"/>
+        <ListBox Name="lbResult" HorizontalAlignment="Left" Height="137" Margin="23,202,0,0" VerticalAlignment="Top" Width="484"/>
+        <WrapPanel HorizontalAlignment="Left" Height="32" Margin="241,78,0,0" VerticalAlignment="Top" Width="108">
+            <RadioButton Name="rdMan" Content="" Height="15" Width="80"/>
+            <RadioButton Name="rdWoman" Height="15" Width="88"/>
+        </WrapPanel>
+        <Image Source="Images/mannelijk_teken.png" HorizontalAlignment="Left" Height="20" Margin="258,78,0,0" VerticalAlignment="Top" Width="13" RenderTransformOrigin="-0.022,0.955"/>
+        <Label Content="Man" HorizontalAlignment="Left" Height="25" Margin="273,73,0,0" VerticalAlignment="Top" Width="52"/>
+        <Image Source="Images/vrouwelijk_teken.jpg" HorizontalAlignment="Left" Height="17" Margin="256,95,0,0" VerticalAlignment="Top" Width="15"/>
+        <Label Content="Woman" HorizontalAlignment="Left" Height="24" Margin="273,86,0,0" VerticalAlignment="Top" Width="62"/>
+
     </Grid>
 </Window>
