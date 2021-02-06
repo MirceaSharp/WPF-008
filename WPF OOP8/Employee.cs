@@ -31,7 +31,7 @@ namespace WPF_OOP8
         }
         public override string ToString()
         {
-            return base.ToString();
+            return FirstName + LastName + Salary;
         }
         public override bool Equals(object obj)
         {

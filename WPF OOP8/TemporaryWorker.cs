@@ -15,7 +15,7 @@ namespace WPF_OOP8
 
         public override string ToString()
         {
-            return base.ToString();
+            return FirstName + LastName + Salary;
         }
 
         public virtual decimal Income()

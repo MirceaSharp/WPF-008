@@ -22,7 +22,30 @@
         <TextBox Name="txtNumber" HorizontalAlignment="Left" Height="22" Margin="99,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
         <TextBox Name="txtCommission" HorizontalAlignment="Left" Height="22" Margin="99,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119"/>
         <Button Name="btnAdd" Content="Add" HorizontalAlignment="Left" Height="24" Margin="241,43,0,0" VerticalAlignment="Top" Width="108" Click="btnAdd_Click"/>
-        <ListBox Name="lbResult" HorizontalAlignment="Left" Height="137" Margin="23,202,0,0" VerticalAlignment="Top" Width="484"/>
+        <ListBox Name="lbResult" HorizontalAlignment="Left" Height="137" Margin="23,202,0,0" VerticalAlignment="Top" Width="484">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <Image Source="{Binding Path=Gender}" Width="10" Height="10" Margin="5">                     
+                            
+                        </Image>
+                        <TextBlock Text="{Binding Path=FirstName}"  />
+                        <TextBlock Text="{Binding Path=LastName}"  />
+                        <TextBlock Text="{Binding Path=Salary}"  />
+
+                    </WrapPanel>                   
+                    
+                </DataTemplate>            
+                
+            </ListBox.ItemTemplate>
+
+            
+
+
+        </ListBox>
+
+        
+        
         <WrapPanel HorizontalAlignment="Left" Height="32" Margin="241,78,0,0" VerticalAlignment="Top" Width="108">
             <RadioButton Name="rdMan" Content="" Height="15" Width="80"/>
             <RadioButton Name="rdWoman" Height="15" Width="88"/>
@@ -31,6 +54,7 @@
         <Label Content="Man" HorizontalAlignment="Left" Height="25" Margin="273,73,0,0" VerticalAlignment="Top" Width="52"/>
         <Image Source="Images/vrouwelijk_teken.jpg" HorizontalAlignment="Left" Height="17" Margin="256,95,0,0" VerticalAlignment="Top" Width="15"/>
         <Label Content="Woman" HorizontalAlignment="Left" Height="24" Margin="273,86,0,0" VerticalAlignment="Top" Width="62"/>
+
 
     </Grid>
 </Window>
