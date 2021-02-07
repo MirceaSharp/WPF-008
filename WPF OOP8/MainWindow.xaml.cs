@@ -34,15 +34,12 @@ namespace WPF_OOP8
 
             if(rdWoman.IsChecked ==true)
             {
-                BitmapImage image1 = new BitmapImage(new Uri(@"Images\vrouwelijk_teken.png", UriKind.Relative));
+                BitmapImage image1 = new BitmapImage(new Uri(@"Images\vrouwelijk_teken.jpg", UriKind.Relative));
                 if (rdCommission.IsChecked == true)
                 {
                     CommissionWorker myCommissionWorker = new CommissionWorker(txtFirstName.Text, txtLastName.Text, Convert.ToDecimal(txtSalary.Text), Convert.ToDecimal(txtCommission.Text), Convert.ToInt32(txtNumber.Text), image1);
                     EmployeesList.Add(myCommissionWorker);
                     lbResult.Items.Add(myCommissionWorker);
-
-
-
                 }
                 else if (rdEmployee.IsChecked == true)
                 {
@@ -75,9 +72,6 @@ namespace WPF_OOP8
                     CommissionWorker myCommissionWorker = new CommissionWorker(txtFirstName.Text, txtLastName.Text, Convert.ToDecimal(txtSalary.Text), Convert.ToDecimal(txtCommission.Text), Convert.ToInt32(txtNumber.Text), image2);
                     EmployeesList.Add(myCommissionWorker);
                     lbResult.Items.Add(myCommissionWorker);
-
-
-
                 }
                 else if (rdEmployee.IsChecked == true)
                 {

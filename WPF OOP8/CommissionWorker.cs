@@ -30,7 +30,7 @@ namespace WPF_OOP8
         }
         public override string ToString()
         {
-            return FirstName + LastName + Salary;
+            return FirstName + LastName + Salary ;
         }
 
 
